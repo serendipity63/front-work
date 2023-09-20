@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.container {
+            display: flex;
+            /* flex inline-flex(딱맞게 간격 없게) */
+            flex-direction: row;
+            /* row 가로, columns 세로, row-reverse 가로반대,column-reverse  세로반대*/
+            /* flex-direction: column; */
+            flex-wrap: nowrap;
+            justify-content: center;
+            /* 수평 정렬: flex-start, flex-end, center, space-between, space-around, space-even*/
+            border: 1px solid black;
+        }
+
+        div.item {
+            margin: 3px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        div.container2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* vertical 정렬: stretch, flex-start, flex-end, center, space-between, space-around,space */
+            border: 1px solid black;
+        }
+
+        .item2 {
+            border: 1px solid black;
+            width: 150px;
+        }
+
+        div.container3 {
+            display: flex;
+        }
+
+        .item3 {
+            /* flex-grow: 1; */
+            border: 1px solid black;
+        }
+
+        .item3:nth-child(1) {
+            flex-shrink: 0;
+            /* 기본이1 */
+            width: 100px;
+            /* flex-grow: 1; */
+
+        }
+
+        .item3:nth-child(2) {
+            flex-grow: 1;
+
+
+        }
+
+        .item3:nth-child(3) {
+            flex-grow: 2;
+
+
+        }
+
+        div.container4 {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .item4 {
+            flex: 1 1 40%;
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0; */
+            border: 1px solid black;
+            margin: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Hello Flex1Hello Flex1Hello Flex1</div>
+        <div class="item">Flex2Flex2</div>
+        <div class="item">Hello Flex3Hello Flex3Hello Flex3</div>
+    </div>
+
+    <div class="container2">
+        <label class="item2">label</label>
+        <h3 class="item2">lee kang in</h3>
+        <p class="item2">seoul gangnamgu ganggnam1dong</p>
+        <h1 class="item2">title</h1>
+    </div>
+    <br>
+    <div class="container3">
+        <div class="item3">ITEM</div>
+        <div class="item3">ITEM</div>
+        <div class="item3">ITEM</div>
+    </div><br>
+
+    <div class="container4">
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+        <div class="item4">ITEM</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            display: inline-block;
+            /* 인라인으로 바꾸면 크기가 안먹힘 */
+            /* 가로세로 크기 적용하려면 block을 써야함 */
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        span {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        /* #box {
+            float: left;
+        } */
+
+        /* 만약 이걸 공간 없이 붙게 하고 싶으면 어떻게 해야할까 */
+    </style>
+</head>
+
+<body>
+    <span>더미 객체</span>
+    <!-- 스타일 태그 -->
+    <div id="box">대상 객체</div>
+    <span>더미 객체</span>
+
+</body>
+
+</html>

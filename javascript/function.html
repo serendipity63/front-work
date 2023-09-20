@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.
+        function add(x, y) {
+            return x + y;
+
+        }
+        var s = add(10, 20);
+        // alert(s);
+        //return type number
+        var sum = add;
+        var s2 = sum(100, 200);
+        //return type function
+        // 함수 명을 변수에 담으면 function처럼 쓴다
+
+        //2.
+        var minus = function (x, y) {
+            return x - y;
+        }
+        // alert(minus(100, 50));
+
+        // var multi = function (x, y) {
+        //     return x * y;
+        // }
+
+        // var multi = (x, y) => x * y; //화살표함수
+        // 람다식
+
+
+        //3.
+        var multi = (x, y) => { return x * y };
+        // 중괄호 들어가면 return 생략 X
+        alert(multi(10, 20));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

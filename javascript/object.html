@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let per = { name: 'son', age: 31, addr: 'UK' };
+        //= 대신 : 그리고 ,를 쓴다
+
+        //자바에서의 배열은 같은 타입만 넣는거 가능한데 
+        //자바스크립트는 혼합 가능하다 근데 잘 그렇지는 않는다
+        //object지만 배열이다. 중괄호는 객체 대괄호는 배열
+        // alert(typeof pers);
+        // alert(typeof per);
+        //중괄호는 함수나 반복문의 역할도 하지만 데이터 타입 역할도 한다
+        //중괄호 안에 넣으면 객체타입이다?
+        //여러개의 객체를 묶어서 하나의 데이터를 만든다
+
+        // let arr = [10, 20, 30, 40, 50];
+        // let sum = 0;
+        // for (i = 0; i < arr.length; i++) {
+        //     sum += arr[i];
+        // }
+        // alert(sum);
+
+        let pers = [{ name: 'son', age: 31, addr: 'UK' },
+        { name: 'lee', age: 21, addr: 'Paris' },
+        { name: 'kim', age: 25, addr: 'Germany' }];
+        let str = '<table border=1><tr><th>이름</th><th>나이</th><th>주소</th><tr>';
+        for (i = 0; i < pers.length; i++) {
+            str += `<tr><td>${pers[i].name}</td><td>${pers[i].age}</td><td>${pers[i].addr}</td><tr>`
+        }
+        str += '</table>';
+        document.write(str);
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

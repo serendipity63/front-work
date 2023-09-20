@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- document object model -->
+    <script>
+        //이벤트 함수: onload
+        window.onload = function () { //dom이 모두 생성된 후에 호출된다.
+            // document.querySelector('h1').style.backgroundColor = 'red';
+            document.querySelector('h2').style.color = 'red';
+            //id면 selector class면 selectorall
+            let h1s = document.querySelectorAll('h1');
+            for (var h1 of h1s) {
+                h1.style.backgroundColor = 'red';
+            }
+        }
+        //querySelector는 특정의 하나만 가지고 온다. 
+        // 여러개 가지고 오고 하고 싶을땐?
+
+    </script>
+</head>
+
+<body>
+    <h1>Hello Javascript</h1>
+    <h1>Hello Javascript</h1>
+    <h2>Hello jQuery</h2>
+
+</body>
+
+</html>

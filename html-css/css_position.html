@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+
+        }
+
+        .box:nth-child(1) {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+            /* 시작점으로부터 이동 eg 10px from left 10px from top*/
+            z-index: 3;
+            /* 큰게 위로 올라오게 한다 */
+        }
+
+        .box:nth-child(2) {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 2;
+        }
+
+        .box:nth-child(3) {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+            z-index: 1;
+        }
+
+        body>div {
+            border: 3px solid black;
+            position: relative;
+            width: 400px;
+            height: 100px;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow-y: scroll;
+            /* overflow-x: scroll; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolar amet</h1>
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolar amet</h1>
+
+</body>
+
+</html>

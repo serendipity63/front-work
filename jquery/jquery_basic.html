@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // $(document).ready(function () { //window.onload=function(){}
+
+        // }); 똑같음
+
+        $(function () {
+            $('h1').css('color', 'red');
+            $('h1').css('background', 'black');
+
+
+            // alert($('script').attr('src'));
+            // $('p').attr('id', 'test'); //p태그에 아이디명을 넣음
+            // $('img').attr('src', 'flower.jpg');
+            // $('img').attr('alt', '꽃');
+            // $('img').attr('width', '200px');
+            $('img').attr({
+                src: function (index) {
+                    return 'flower' + (index + 1) + '.jpg'
+
+                },
+
+
+                alt: '꽃',
+                width: function (index) {
+                    return (index + 1) * 100;
+                }
+            });
+
+        })
+
+        // window.onload = function () {
+        //     var hs = document.querySelectorAll('h1');
+        //     for (let h of hs) {
+        //         h.style.background = 'black';
+        //         h.style.color = 'red';
+        //     }
+        // }
+
+    </script>
+</head>
+
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <p></p>
+    <img src="" alt=""><br>
+    <img src="" alt=""><br>
+    <img src="" alt="">
+</body>
+
+</html>
